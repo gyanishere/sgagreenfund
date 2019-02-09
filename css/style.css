@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik:400,400i,700,700i');
+
+body {
+  font-family:'Rubik', Helvetica, arial, sans-serif;
+  font-size:1em;
+  padding:0;
+  margin:0;
+}
+
+body.page {
+  padding-top:50px;
+}
+
+header {
+  width:100%;
+  position:absolute;
+  top:0;
+  height:60px;
+  background:white;
+}
+
+header .logo {
+  height: 40px;
+  position: relative;
+  top: 9px;
+  left: 20px;
+  margin-bottom: 5px;
+  pointer-events: none;
+}
+
+nav {
+  float:right;
+  margin-top:0;
+}
+
+nav a {
+  border-bottom: 0;
+  font-size: 1em;
+  margin-right: 10px;
+  padding: 15px 15px;
+  display: inline-block;
+}
+
+nav a:hover {
+  background:whitesmoke;
+}
+
+nav a.selected {
+  color:#6FCF97;
+  font-weight:600;
+}
+
+.cover {
+  width: 100%;
+  text-align: center;
+  color: white;
+  background-image: url('../img/hero.jpg');
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position:0 -500px;
+
+}
+
+.cover__mask {
+  background-image: linear-gradient(
+    to bottom , rgba(255,255,255,0), rgba(29, 180, 54, 0.7) 80%);
+
+  /* background:; */
+}
+
+.cover__content {
+  margin: 20px;
+  padding: 270px 80px 100px 80px;
+}
+
+.cover h1 {
+  font-size: 2.5em;
+  margin-bottom: 0;
+}
+
+.cover__content p {
+ line-height:1.5;
+ font-size:2.5em;
+}
+
+
+ p {
+  line-height:1.5;
+  font-size:1.2em;
+}
+
+button {
+  -webkit-appearance:none;
+  appearance:none;
+  background:transparent;
+  color:#219653;
+  border-radius:4px;
+  padding:10px 15px;
+  border:2px solid #219653;
+  font-family:'Rubik', Helvetica, arial, sans-serif;
+  font-size:1em;
+  cursor:pointer;
+}
+
+button.primary {
+  background:#219653;
+  color:white;
+  border-color:#219653;
+}
+
+p button {
+  margin-right:10px;
+}
+
+p.buttons {
+  margin-top:30px;
+  margin-bottom:10px;
+}
+
+a {
+  color:black;
+  text-decoration:none;
+  border-bottom:1px solid black;
+}
+
+a:active {
+  opacity:.7;
+}
+
+/* Content sections */
+main .section {
+  padding:20px;
+  max-width:900px;
+  width:80%;
+  margin:auto;
+}
+
+button.button-black {
+    -webkit-appearance:none;
+    appearance:none;
+    background:transparent;
+    color:black;
+    border-radius:0;
+    padding:10px 15px;
+    border:2px solid black;
+    font-family:'Rubik', Helvetica, arial, sans-serif;
+    font-size:1em;
+    cursor:pointer;
+}
+
+h3 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+main div h2 {
+  font-size:2em;
+  font-weight:400;
+}
+
+footer {
+  font-size:.9em;
+  color:gray;
+  text-align:center;
+  padding:10px;
+}
+
+/* Page --> Resources */
+
+.logo-link {
+  border:0;
+  color:inherit;
+  position: relative;
+  top: 9px;
+  left: 20px;
+  margin-bottom: 5px;
+}
+
+.resource-tidbit {
+    background: whitesmoke;
+    padding: 20px;
+    padding-top: 1px;
+    padding-bottom: 20px;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+
+.resource-tidbit h4 {
+    font-size: 1.1em;
+    margin-bottom: 0;
+}
+
+.resource-tidbit p {
+    font-size: 1em;
+}
+
+/* media queries */
+@media only screen and (max-width:650px) {
+  .cover__content {
+    padding: 80px 0 40px 0;
+    font-size:.8em;
+  }
+
+  .cover {
+    background-position:0;
+  }
+
+  .cover .buttons button.primary {
+    margin-bottom: 20px;
+  }
+
+  .program img {
+    width:100%;
+  }
+
+  .campaigns a img {
+    height:auto;
+    width: 100%;
+    margin-bottom: 10px;
+    max-width: 200px;
+  }
+
+  footer {
+    line-height:1.5;
+    max-width:80%;
+  }
+}
