@@ -1,0 +1,8 @@
+{
+  "version": 2,
+	"name": "greenfund",
+  "routes": [
+    { "src": "/resources", "dest": "/resources.html" },
+    { "src": "/", "dest": "/index.html" }
+  ]
+}
